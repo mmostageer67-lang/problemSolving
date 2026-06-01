@@ -22,3 +22,12 @@ var createCounter = function(init) {
       
     }
 };
+//====================
+var createCounter = function(init) {
+  let value=init
+  return Object.freeze({
+  increment: () => ++value,
+  decrement: () => --value,
+  reset: () => (value = init)
+})
+};
