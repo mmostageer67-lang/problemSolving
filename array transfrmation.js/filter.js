@@ -1,8 +1,8 @@
 /**
- * @param {number[]} arr
+ * @param {number[]} nums
  * @param {Function} fn
- * @return {number[]}
+ * @param {number} init
+ * @return {number}
  */
-var filter = function(arr, fn) {
-return arr.filter(fn)
-};
+var reduce = function(nums, fn, init) {
+return nums.reduce(fn, init);};
