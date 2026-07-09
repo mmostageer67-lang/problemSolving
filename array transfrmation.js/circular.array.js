@@ -13,3 +13,11 @@ var constructTransformedArray = function(nums) {
 
     return result;
 };
+//==================================another solution=========================================
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var constructTransformedArray = function(nums) {
+    return  nums.map((n, i) => nums.at((n + i) % nums.length))
+};
