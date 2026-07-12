@@ -11,3 +11,12 @@ var transformArray = function (nums) {
 
     return result.sort((a, b) => a - b);
 };
+'//==============================another solution ================'
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var transformArray = function(nums) {
+return nums.map(n => n % 2).sort((a, b) => a - b);
+};
+
