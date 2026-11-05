@@ -10,8 +10,10 @@ var finalValueAfterOperations = function(operations) {
         if(operation . includes('+'))
 
         {x++}
-        else if (operation. includes('-'))
+        else if (                       
+            
+                operation. includes('-'))
         x--
        
     } return x
-}
+}               
